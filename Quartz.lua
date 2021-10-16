@@ -1119,7 +1119,7 @@ end
 if text == 'تحديث السورس ❃' and DevQuartzW(msg) then 
 os.execute('rm -rf Quartz.lua')
 os.execute('wget https://raw.githubusercontent.com/QuartzTG/Quartz/master/Quartz.lua')
-send(msg.chat_id_, msg.id_,' 𝆥 ༯ تم تحديث السورس \n 𝆥 ༯ لديك اخر اصدار لسورس بويكا\n 𝆥 ༯ الاصدار » { 6.7v}')
+send(msg.chat_id_, msg.id_,' 𝆥 ༯ تم تحديث السورس \n 𝆥 ༯ لديك اخر اصدار لسورس كوارتز\n 𝆥 ༯ الاصدار » { 6.7v}')
 dofile('Quartz.lua')  
 end
 if text == 'تحديث المتجر ❃' and DevQuartzW(msg) then 
@@ -2388,7 +2388,7 @@ return false
 end
 os.execute('rm -rf Quartz.lua')
 os.execute('wget https://raw.githubusercontent.com/QuartzTG/Quartz/master/Quartz.lua')
-send(msg.chat_id_, msg.id_,' 𝆥 ༯ تم تحديث السورس \n 𝆥 ༯ لديك اخر اصدار لسورس بويكا\n 𝆥 ༯ الاصدار » { 6.7v}')
+send(msg.chat_id_, msg.id_,' 𝆥 ༯ تم تحديث السورس \n 𝆥 ༯ لديك اخر اصدار لسورس كوارتز\n 𝆥 ༯ الاصدار » { 6.7v}')
 dofile('Quartz.lua')  
 end
 
@@ -8851,8 +8851,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'كوارتز').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'كوارتز')
 local Quartz_Msg = {
 'عمغي 🥺💕.',
 'هاا شتريد كافي ☹️.',
@@ -9452,7 +9452,7 @@ end
 end
 end
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'بويكا').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'كوارتز').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'𝆥 ༯ تم مغادرة المجموعه') 
@@ -9461,7 +9461,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+Namebot = (database:get(bot_id..'Name:Bot') or 'كوارتز')
 send(msg.chat_id_, msg.id_,'اسمي ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
@@ -11571,7 +11571,7 @@ if (text and text == "تفعيل اوامر التحشيش") then
 send(msg.chat_id_, msg.id_, '  𝆥 ༯ تم تفعيل اوامر التحشيش')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'بويكا')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'كوارتز')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
