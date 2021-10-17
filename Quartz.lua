@@ -10650,8 +10650,6 @@ end
   {
   {text = '9️⃣', callback_data="/help9"},{text = '🔟', callback_data="/help10"},
   },
-  {
-    {text = Quartz', url="t.me/KKKKiK"},{text = tast', url="t.me/KKKKiK"},
 
   }
   local msg_id = msg.id_/2097152/0.5
