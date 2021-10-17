@@ -11548,21 +11548,21 @@ DeleteMessage(msg.chat_id_, {[0] = v})
 end
 send(msg.chat_id_, msg.id_,"𝆥 ༯ تم مسح الميديا بنجاح")
 end
-if text == "غنيلي" and Mod(msg) then 
+if text == "غنيلي" and Special(msg) then 
   data,res = https.request('https://boyka-api.ml/audios.php')
-if res == 200 then
-audios = json:decode(data)
-if audios.Info == true then
-local Text ='*𝆥 ༯ تم اختيار المقطع الصوتي لك'
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '-Quartz',url="t.me/KKKKiK"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-end
-end
+  if res == 200 then
+  audios = json:decode(data)
+  if audios.Info == true then
+  local Text ='*𝆥 ༯ تم اختيار المقطع الصوتي لك*'
+  keyboard = {} 
+  keyboard.inline_keyboard = {
+  {{text = 'Quartz',url="t.me/KKKKiK"}},
+  }
+  local msg_id = msg.id_/2097152/0.5
+  https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+  end
+  end
+  end
 if (text and text == "تعطيل اوامر التحشيش") then 
 send(msg.chat_id_, msg.id_, ' 𝆥 ༯ تم تعطيل اوامر التحشيش')
 database:set(bot_id.."Fun_Bots:"..msg.chat_id_,"true")
