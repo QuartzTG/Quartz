@@ -22,7 +22,7 @@ sudo chmod +x tg
 lua Quartz.lua
 sudo chmod +x Quartz
 sudo chmod +x ./Run
-./BK
+./Run
 }
 if [ "$1" = "install" ]; then
 install
